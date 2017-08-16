@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+/* 기본 색상 */
+:root {
+	--main-color: #5D9AB2;
+	--accent-color: #BF6A7A;
+	--dark-main-color: #2B5566;
+	--text-bright-color: #fff;
+}
+
+
+/* 기본 설정: 페이지 전체 */
+body {
+	margin: 0;
+	font-family: '맑은 고딕',
+		'Apple SD Gothic Neo', 
+		sans-serif;
+}
+
+
+/* 콘텐츠A: 히어로 이미지 */
+.conA {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	min-height: 450px;
+	background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(img/fruits.jpg);
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	color: var(--text-bright-color);
+	text-align: center;
+}
+
+.conA h1 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15vw;
+	letter-spacing: 0.2em;
+	margin-left: 0.2em;
+}
+
+.conA p {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 18px;
+}
+
+.conA img {
+	width: 20%;
+}
+
+.conA a {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 30px;
+	border: solid 3px currentColor;
+	border-radius: 6px;
+	background-color: #BF6A7A;
+	background-color: var(--accent-color);
+	color: #fff;
+	color: var(--text-bright-color);
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.conA a:hover	{
+	background-image: linear-gradient(
+		rgba(255,255,255,0.2),
+		rgba(255,255,255,0.2)
+	);
+}
+
+
+@media (min-width: 768px) {
+	.conA h1 {
+		font-size: 115px;
+	}
+
+	.conA p {
+		font-size: 24px;
+	}
+}
+
+
+
+/* 콘텐츠B: 개요(아이콘 + 글자) */
+.conB h2 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.conB p {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 1.8;
+	opacity: 0.8;
+}
+
+.conB a {
+	color: #5D9AB2;
+	color: var(--main-color);
+	text-decoration: none;
+}
+
+.conB a:hover	{
+	text-decoration: underline;
+}
+

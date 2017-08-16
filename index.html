@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>6단계로 마스터하는 최신 HTML + CSS 디자인</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body	{margin: 0;
+	background-color: #eee;
+	font-family: Helvetica, Arial, '맑은 고딕', 'Apple SD Gothic Neo', sans-serif}
+.contents	{max-width: 768px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding:  30px 80px;}
+h1	{font-size: 40px;}
+h1 .title01	{display: block;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	color: #005bac;
+	border-bottom: solid 4px currentColor;
+	font-size: 28px}
+h2	{padding: 5px 0;
+	background-color: #005bac;
+	color: #fff;
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;}
+h4	{display: flex;
+	align-items: center;
+	margin-top: 60px;}
+h4 .chap {display: inline-block;
+	margin-bottom: 10px;
+	margin-right: 20px;
+	font-size: 30px;
+	width: 2.8em;
+	height: 2.8em;
+	line-height: 1.2;
+	padding-top: 0.75em;
+	box-sizing: border-box;
+	border-radius: 50%;
+	text-align: center;
+	background-color: #00b3b1;
+	color: #fff;}
+h4 .chap span {display: block;
+	font-size: 12px;}
+h4 .chaptitle	{font-size: 30px;
+	line-height: 1.2;}
+h4 .chaptitle span	{font-size: smaller;
+	color: #666;}
+ul	{margin: 0;
+	padding: 0;
+	list-style: none}
+li a	{display: block;
+	padding: 5px;
+	padding-left: 10px;
+	color: #000000;
+	text-decoration: none}
+li li:nth-child(odd)  {background-color: #e0e0e0;}
+li li:nth-child(even)  {background-color: #efefef;}
+li a[href]:hover	{background-color: #c7e5ff}
+ul li	{margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 18px;}
+ul ul	{margin-top: 15px;
+	margin-bottom: 30px}
+ul ul li	{margin-left: 50px;
+	margin-top: 0;
+	line-height: 1}
+li span	{color: #00b3b1;
+	font-size: 1.2em;
+	margin-right: 10px;}
+ul ul li	{font-size: 0.7em;}
+.copyright	{margin: 50px 0 0;
+	padding-top: 10px;
+	border-top: solid 2px #cccccc;
+	color: #666666;
+	font-size: 12px;}
+.fix	{border: solid 2px #00b3b1;
+	padding: 20px;}
+.fix h3	{margin-top: 0;}
+.fix a	{padding: 5px;
+	border: solid 1px #00b3b1;
+	border-radius: 5px;}
+.fix div {display: flex;}
+.fix ul	{flex: 1;}
+.fix ul:first-child {margin-right: 10px;}
+
+@media (min-width: 641px) {
+h1 .title02	{display: inline-block;
+	font-size: 30px;
+	width: 4em;
+	height: 4em;
+	line-height: 1.2;
+	padding-top: 0.75em;
+	box-sizing: border-box;
+	border-radius: 50%;
+	text-align: center;
+	background-color: #ff0;
+	vertical-align: middle;}
+}
+@media (max-width: 767px) {
+.contents	{padding: 20px 25px}
+}
+@media (max-width: 640px) {
+.contents	{padding: 10px}
+h1 .title02	{display: block;
+	background-color: #ff0;
+	font-size: 18px;
+	font-weight: normal;}
+h1 .title02 br {display: none;}
+ul ul li	{margin-left: 0}
+h4 .chap	{margin-right: 8px;
+	font-size: 18px;
+	padding-top: 0.7em;}
+h4 .chap span	{font-size: 10px;}
+h4 .chaptitle	{font-size: 20px;}
+}
+@media (max-width: 480px) {
+h1	{font-size: 28px;}
+h1 .title01	{font-size: 16px;}
+h1 .title02	{font-size: 14px;}
+}
+</style>
+
+</head>
+<body>
+
+
+<div class="contents">
+<h1><span class="title01">6단계로 마스터하는</span>
+<span class="title02">최신<br>표준</span> HTML + CSS 디자인</h1>
+
+<h2>SAMPLE DATA</h2>
+
+
+<div class="fix">
+<h3>완성 샘플</h3>
+<div>
+<ul>
+<li><a href="sample/index.html">최상위 페이지</a></li>
+<li><a href="sample/contents.html">콘텐츠 페이지</a></li>
+<li><a href="sample/about.html">소개 페이지</a></li>
+<li><a href="sample/contact.html">문의 페이지</a></li>
+</ul>
+<ul>
+<li><a href="sample/list-a.html">기사 목록A 페이지</a></li>
+<li><a href="sample/list-b.html">기사 목록B 페이지</a></li>
+<li><a href="sample/list-c.html">기사 목록C 페이지</a></li>
+</ul>
+</div>
+</div>
+
+<div class="contents-list">
+<h4><span class="chap"><span>Chapter</span> 1</span><span class="chaptitle">사전 준비</span></h4>
+<ul><li><a><span>1-3</span>웹 페이지 준비하기</a><ul>
+<li><a href="1-3/index.html"><span>1-3-1</span>  HTML 파일 설정하기</a></li>
+<li><a href="1-3/style.css"><span>1-3-2</span>  CSS 파일 설정하기</a></li>
+</ul></li></ul>
+<h4><span class="chap"><span>Chapter</span> 2</span><span class="chaptitle">최상위 페이지 만들기<br><span>콘텐츠</span></span></h4>
+<ul><li><a href="2-1/index.html"><span>2-1</span>히어로 이미지</a><ul>
+<li><a href="2-1-1/index.html"><span>2-1-1</span>  이미지 위에 글자 출력하기</a></li>
+<li><a href="2-1-2/index.html"><span>2-1-2</span>  웹 폰트로 출력할 글자 간격 조정하기</a></li>
+<li><a href="2-1-3/index.html"><span>2-1-3</span>  브라우저 화면을 꽉 채우도록 이미지 출력하기</a></li>
+<li><a href="2-1-4/index.html"><span>2-1-4</span>  SVG로 로고 이미지 출력하기</a></li>
+<li><a href="2-1-5/index.html"><span>2-1-5</span>  링크 박스 출력하기</a></li>
+</ul></li><li><a href="2-2/index.html"><span>2-2</span>개요(아이콘 + 글자)</a><ul>
+<li><a href="2-2-1/index.html"><span>2-2-1</span>  개요 글자 출력하기</a></li>
+<li><a href="2-2-2/index.html"><span>2-2-2</span>  아이콘 출력하기</a></li>
+<li><a href="2-2-3/index.html"><span>2-2-3</span>  3개의 개요를 가로로 정렬하기</a></li>
+</ul></li><li><a href="2-3/index.html"><span>2-3</span>개요(이미지 + 글자)</a><ul>
+<li><a href="2-3-1/index.html"><span>2-3-1</span>  이미지와 글자 출력하기</a></li>
+<li><a href="2-3-2/index.html"><span>2-3-2</span>  이미지와 글자를 가로로 정렬하기</a></li>
+</ul></li><li><a href="2-4/index.html"><span>2-4</span>개요(이미지 + 글자: 반대로 배치하기)</a><ul>
+<li><a href="2-4-1/index.html"><span>2-4-1</span>  콘텐츠C를 기반으로 새로운 블록 만들기</a></li>
+<li><a href="2-4-2/index.html"><span>2-4-2</span>  이미지의 너비를 고정하고 정렬 순서 변경하기</a></li>
+</ul></li></ul>
+<h4><span class="chap"><span>Chapter</span> 3</span><span class="chaptitle">최상위 페이지 만들기<br><span>내비게이션</span></span></h4>
+<ul><li><a href="3-1/index.html"><span>3-1</span>사이트 정보</a><ul>
+<li><a href="3-1-1/index.html"><span>3-1-1</span>  사이트 정보 출력하기</a></li>
+<li><a href="3-1-2/index.html"><span>3-1-2</span>  푸터 디자인 지정하기</a></li>
+</ul></li><li><a href="3-2/index.html"><span>3-2</span>푸터 메뉴</a><ul>
+<li><a href="3-2-1/index.html"><span>3-2-1</span>  푸터 메뉴 만들기</a></li>
+<li><a href="3-2-2/index.html"><span>3-2-2</span>  3개의 메뉴를 가로로 정렬하기</a></li>
+</ul></li><li><a href="3-3/index.html"><span>3-3</span>저작권</a><ul>
+<li><a href="3-3-1/index.html"><span>3-3-1</span>  저작권 출력하기</a></li>
+<li><a href="3-3-2/index.html"><span>3-3-2</span>  푸터 내부의 요소 레이아웃 조정하기</a></li>
+</ul></li><li><a href="3-4/index.html"><span>3-4</span>SNS 메뉴</a><ul>
+<li><a href="3-4-1/index.html"><span>3-4-1</span>  SNS 메뉴 출력하기</a></li>
+<li><a href="3-4-2/index.html"><span>3-4-2</span>  SNS 메뉴의 디자인 지정하기</a></li>
+</ul></li><li><a href="3-5/index.html"><span>3-5</span>헤더의 사이트 이름</a><ul>
+</ul></li><li><a href="3-6/index.html"><span>3-6</span>내비게이션 메뉴</a><ul>
+<li><a href="3-6-1/index.html"><span>3-6-1</span>  내비게이션 메뉴 만들기</a></li>
+<li><a href="3-6-2/index.html"><span>3-6-2</span>  큰 화면에서는 내비게이션 메뉴를 가로로 정렬하기</a></li>
+</ul></li><li><a href="3-7/index.html"><span>3-7</span>토글 버튼</a><ul>
+<li><a href="3-7-1/index.html"><span>3-7-1</span>  토글 버튼 만들기</a></li>
+<li><a href="3-7-2/index.html"><span>3-7-2</span>  토글 버튼으로 내비게이션 메뉴 열고 닫기</a></li>
+</ul></li></ul>
+<h4><span class="chap"><span>Chapter</span> 4</span><span class="chaptitle">콘텐츠 페이지 만들기<br><span>콘텐츠 / 소개 / 문의</span></span></h4>
+<ul><li><a href="4-1/contents.html"><span>4-1</span>콘텐츠 페이지</a><ul>
+<li><a href="4-1-1/contents.html"><span>4-1-1</span>  콘텐츠 페이지 만들기</a></li>
+<li><a href="4-1-2/contents.html"><span>4-1-2</span>  기사의 디자인 지정하기</a></li>
+<li><a href="4-1-3/contents.html"><span>4-1-3</span>  빵 부스러기 리스트 출력하기</a></li>
+</ul></li><li><a href="4-2/about.html"><span>4-2</span>소개 페이지</a><ul>
+<li><a href="4-2-1/about.html"><span>4-2-1</span>  소개 페이지 만들기</a></li>
+<li><a href="4-2-2/about.html"><span>4-2-2</span>  이미지와 연혁 출력하기</a></li>
+</ul></li><li><a href="4-3/contact.html"><span>4-3</span>문의 페이지</a><ul>
+<li><a href="4-3-1/contact.html"><span>4-3-1</span>  문의 페이지 만들기</a></li>
+<li><a href="4-3-2/contact.html"><span>4-3-2</span>  지도 출력하기</a></li>
+</ul></li></ul>
+<h4><span class="chap"><span>Chapter</span> 5</span><span class="chaptitle">기사 목록 페이지 만들기<br><span>카드 형태 / 썸네일 형태</span></span></h4>
+<ul><li><a href="5-1/list-a.html"><span>5-1</span>기사 목록A： 카드 형태(이미지 + 글자를 위 아래에 배치)</a><ul>
+<li><a href="5-1-1/list-a.html"><span>5-1-1</span>  기사 목록A 페이지 만들기</a></li>
+<li><a href="5-1-2/list-a.html"><span>5-1-2</span>  기사 개요 출력하기</a></li>
+<li><a href="5-1-3/list-a.html"><span>5-1-3</span>  브라우저 화면의 너비에 따라 개요의 정렬 상태 바꾸기</a></li>
+</ul></li><li><a href="5-2/list-b.html"><span>5-2</span>기사 목록B: 카드 형태(이미지 + 글자를 왼쪽 오른쪽에 배치)</a><ul>
+</ul></li><li><a href="5-3/list-c.html"><span>5-3</span>기사 목록C: 썸네일 형태(이미지 + 글자를 중첩해서 배치)</a><ul>
+</ul></li></ul>
+<h4><span class="chap"><span>Chapter</span> 6</span><span class="chaptitle">디자인 재구성</span></h4>
+<ul><li><a href="6-1/index.html"><span>6-1</span>헤더 색 재구성하기</a></li>
+<li><a href="6-2/list-a.html"><span>6-2</span>헤더와 히어로 이미지를 하나로 디자인하기</a></li>
+<li><a href="6-3/index.html"><span>6-3</span>헤더를 화면 위에 고정하기</a></li>
+<li><a href="6-4/contents.html"><span>6-4</span>연관 기사 메뉴 추가하기</a></li>
+<li><a href="6-5/contents.html"><span>6-5</span>메타 데이터 추가하기</a></li>
+<li><a><span>6-6</span>페이지의 기본색 재구성하기</a><ul>
+<li><a href="6-6/colorA/index.html"><span>COLOR</span> A</a></li>
+<li><a href="6-6/colorB/index.html"><span>COLOR</span> B</a></li>
+<li><a href="6-6/colorC/index.html"><span>COLOR</span> C</a></li>
+<li><a href="6-6/colorD/index.html"><span>COLOR</span> D</a></li>
+<li><a href="6-6/colorE/index.html"><span>COLOR</span> E</a></li>
+</ul></li></ul>
+
+
+<ul style="margin-top: 60px">
+<li><a href="old-browser/index.html"><span>APPENDIX</span> 오래된 브라우저 전용 설정</a></li>
+</ul>
+</div>
+
+<p class="copyright">©EBISUCOM TECH LAB / マイナビ出版 / 위키북스</p>
+
+</div>
+
+</body>
+</html>
+

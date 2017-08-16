@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+/* 기본 색상 */
+:root {
+	--main-color: #5D9AB2;
+	--accent-color: #BF6A7A;
+	--dark-main-color: #2B5566;
+	--text-bright-color: #fff;
+	--icon-color: #fff;
+	--icon-bk-color: #ddd;
+	--large-width: 1000px;
+}
+
+
+/* 기본 설정: 페이지 전체 */
+body {
+	margin: 0;
+	font-family: '맑은 고딕',
+		'Apple SD Gothic Neo', 
+		sans-serif;
+}
+
+
+/* 콘텐츠A: 히어로 이미지 */
+.conA {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	min-height: 450px;
+	background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(img/fruits.jpg);
+	background-position: center;
+	background-size: cover;
+	color: #fff;
+	color: var(--text-bright-color);
+	text-align: center;
+}
+
+.conA h1 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15vw;
+	letter-spacing: 0.2em;
+	margin-left: 0.2em;
+}
+
+.conA p {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 18px;
+}
+
+.conA img {
+	width: 20%;
+}
+
+.conA a {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 30px;
+	border: solid 3px currentColor;
+	border-radius: 6px;
+	background-color: #BF6A7A;
+	background-color: var(--accent-color);
+	color: #fff;
+	color: var(--text-bright-color);
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.conA a:hover	{
+	background-image: linear-gradient(
+		rgba(255,255,255,0.2),
+		rgba(255,255,255,0.2)
+	);
+}
+
+
+@media (min-width: 768px) {
+	.conA h1 {
+		font-size: 115px;
+	}
+
+	.conA p {
+		font-size: 24px;
+	}
+}
+
+
+
+/* 콘텐츠B: 개요(아이콘 + 글자) */
+.conB .container {
+	padding-top: 80px;
+	padding-bottom: 20px;
+}
+
+.conB .text {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+.conB h2 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.conB p {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 1.8;
+	opacity: 0.8;
+}
+
+.conB a {
+	color: #5D9AB2;
+	color: var(--main-color);
+	text-decoration: none;
+}
+
+.conB a:hover	{
+	text-decoration: underline;
+}
+
+.conB .icon	{
+	display: inline-block;
+	margin-bottom: 20px;
+	font-size: 40px;
+	width: 2em;
+	line-height: 2em;
+	border-radius: 50%;
+	text-align: center;
+	background-color: #ddd;
+	background-color: var(--icon-bk-color);
+	color: #fff;
+	color: var(--icon-color);
+}
+
+@media (min-width: 768px) {
+	.conB .container {
+		display: flex;
+		max-width: 1000px;
+		max-width: var(--large-width);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.conB .text	{
+		flex: 1;
+	}
+}
+
+
+
+/* 콘텐츠C: 개요(이미지 + 글자) */
+.conC {
+	background-color: #5D9AB2;
+	background-color: var(--main-color);
+	color: #fff;
+	color: var(--text-bright-color);
+}
+
+.conC .text {
+	padding: 20px;
+}
+
+.conC h2 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.conC p {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 1.8;
+	opacity: 0.8;
+}
+
+.conC a {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 30px;
+	border: solid 3px currentColor;
+	border-radius: 6px;
+	background-color: #BF6A7A;
+	background-color: var(--accent-color);
+	color: #fff;
+	color: var(--text-bright-color);
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.conC a:hover	{
+	background-image: linear-gradient(
+		rgba(255,255,255,0.2),
+		rgba(255,255,255,0.2)
+	);
+}
+
+.conC .photo {
+	min-height: 200px;
+	background-image: url(img/note.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+@media (min-width: 768px) {
+	.conC .container {
+		display: flex;
+		max-width: 1000px;
+		max-width: var(--large-width);
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.conC .photo {
+		flex: 3;
+	}
+
+	.conC .text {
+		flex: 2;
+		padding: 50px;
+	}
+}
+
+
+
+/* 콘텐츠D: 개요(이미지 + 글자 : 반대로 배치하기) */
+.conD .container {
+	padding-top: 2px;
+}
+
+.conD .text {
+	padding: 20px;
+}
+
+.conD h2 {
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.conD p {
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 1.8;
+	opacity: 0.8;
+}
+
+.conD a {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 10px 30px;
+	box-shadow: 0 0 0 1px #888;
+	border: solid 3px currentColor;
+	border-radius: 6px;
+	background-color: #BF6A7A;
+	background-color: var(--accent-color);
+	color: #fff;
+	color: var(--text-bright-color);
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.conD a:hover	{
+	background-image: linear-gradient(
+		rgba(255,255,255,0.2),
+		rgba(255,255,255,0.2)
+	);
+}
+
+.conD .photo {
+	min-height: 200px;
+	background-image: url(img/life.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+@media (min-width: 768px) {
+	.conD .container {
+		display: flex;
+		flex-direction: row-reverse;
+		max-width: 1000px;
+		max-width: var(--large-width);
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.conD .photo {
+		flex: 0 0 400px;
+	}
+
+	.conD .text {
+		flex: 1;
+		padding: 50px;
+	}
+}
+
