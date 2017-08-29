@@ -689,6 +689,7 @@ header {
 	padding-right: 1rem;
 	text-align: left;
 	word-break: keep-all;
+	white-space: nowrap;
 }
 
 
